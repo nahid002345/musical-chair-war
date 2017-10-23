@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btndplayer"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/btn_dplayer"
+                android:onClick="onButtonClicker"
+                android:text="Player" />
+
+            <Button
+                android:id="@+id/btndplaylist"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/btn_dplaylist"
+                android:onClick="onButtonClicker"
+                android:text="Play List" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btndsetting"
+                style="@style/HomeButton"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|fill_horizontal|center"
+                android:drawableTop="@drawable/btn_dsetting"
+                android:onClick="onButtonClicker"
+                android:text="Setting" />
+
+            <Button
+                android:id="@+id/btndabout"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/btn_dabout"
+                android:onClick="onButtonClicker"
+                android:text="About" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btndexit"
+                style="@style/HomeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/deshboardexit"
+                android:onClick="onButtonClicker"
+                android:text="Exit" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
